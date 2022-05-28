@@ -1,0 +1,63 @@
+@import 'variables.css';
+
+html.ml-theme,
+html.ml-theme body {
+  background: var(--ml-dark-bg);
+  color: var(--ml-dark-fg);
+}
+
+.ml-theme .muted {
+  color: var(--ml-dark-muted);
+}
+
+.ml-theme .aside {
+  background-color: var(--ml-dark-aside);
+}
+
+@media (prefers-color-scheme: light) {
+  html.ml-theme,
+  html.ml-theme body {
+    background: var(--ml-light-bg);
+    color: var(--ml-light-fg);
+  }
+
+  .ml-theme .muted {
+    color: var(--ml-light-muted);
+  }
+
+  .ml-theme .aside {
+    background-color: var(--ml-light-aside);
+  }
+}
+
+.ml-theme .text-good {
+  color: var(--ml-status-good);
+}
+
+.ml-theme .text-bad {
+  color: var(--ml-status-bad);
+}
+
+.ml-theme .text-warn {
+  color: var(--ml-status-warn);
+}
+
+.ml-theme .text-info {
+  color: var(--ml-status-info);
+}
+
+.ml-theme .bg-good {
+  background-color: var(--ml-status-good);
+}
+
+.ml-theme .bg-bad {
+  background-color: var(--ml-status-bad);
+}
+
+.ml-theme .bg-warn {
+  background-color: var(--ml-status-warn);
+}
+
+.ml-theme .bg-info {
+  background-color: var(--ml-status-info);
+}

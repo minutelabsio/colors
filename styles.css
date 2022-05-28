@@ -1,0 +1,85 @@
+@import './styles/theme.css';
+
+html,
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  max-width: 1600px;
+  margin: 4em auto;
+}
+
+aside {
+  padding: 1em;
+}
+
+.colors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  width: 100%;
+  min-height: 100%;
+}
+
+.palettes {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+
+.palettes > * {
+  margin: 2em 0;
+}
+
+.palette > * {
+  padding: 2em;
+}
+
+.palette::before {
+  content: attr(data-title);
+  display: block;
+  font-size: 36px;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.c {
+  color: var(--color, 'grey');
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 180px;
+  padding: 1em;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-radius: 4px;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.c p {
+  margin: 0;
+}
+
+.c::before {
+  content: '';
+  position: relative;
+  width: 4.5em;
+  height: 4.5em;
+  border-radius: 50%;
+  background-color: var(--color, 'grey');
+}
+
+.c::after {
+  content: '';
+  position: relative;
+  width: 4.5em;
+  height: 4.5em;
+  border-radius: 50%;
+  border: 1px solid var(--color, 'grey');
+}
