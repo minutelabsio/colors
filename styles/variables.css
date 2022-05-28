@@ -34,8 +34,12 @@
 --ml-light-aside: #d6d4ce;
 --ml-light-fg: #22272d;
 --ml-light-muted: #72787f;
---ml-status-bad: #cd4832;
---ml-status-warn: #d07b00;
 --ml-status-good: #1bc0aa;
+--ml-status-warn: #d07b00;
+--ml-status-bad: #cd4832;
 --ml-status-info: #5bb3f9;
+--ml-status-dark-good: #008e74;
+--ml-status-dark-warn: #ae6300;
+--ml-status-dark-bad: #cd4832;
+--ml-status-dark-info: #0080e5;
 }

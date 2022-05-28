@@ -53,12 +53,19 @@ export const light = Object.freeze({
   muted: all.charcoal.set('lch.l', 50),
 })
 
-export const status = Object.freeze(sortByLightness({
+export const status = Object.freeze({
   good: all.seafoam,
-  bad: all.tomato,
   warn: all.orange,
+  bad: all.tomato,
   info: all.blue,
-}))
+})
+
+export const statusDark = Object.freeze({
+  good: matchWith(all.seafoam, all.tomato),
+  warn: matchWith(all.orange, all.tomato),
+  bad: matchWith(all.tomato, all.tomato),
+  info: matchWith(all.blue, all.tomato),
+})
 
 export const neutrals = Object.freeze(sortByLightness({
   dark: all.dark,
