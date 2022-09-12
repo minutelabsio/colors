@@ -7,7 +7,7 @@
   "type": "module",
   "author": "wellcaffeinated",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "vite",
     "build": "node build.js"
