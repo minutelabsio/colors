@@ -46,6 +46,53 @@ html.ml-theme body {
   background-color: var(--ml-status-dark-info);
 }
 
+/* light */
+html.ml-theme.light,
+html.ml-theme.light body {
+  background: var(--ml-light-bg);
+  color: var(--ml-light-fg);
+}
+
+.ml-theme.light .muted {
+  color: var(--ml-light-muted);
+}
+
+.ml-theme.light .aside {
+  background-color: var(--ml-light-aside);
+}
+
+/* .ml-theme.light .text-good {
+    color: var(--ml-status-dark-good);
+  }
+
+  .ml-theme.light .text-bad {
+    color: var(--ml-status-dark-bad);
+  }
+
+  .ml-theme.light .text-warn {
+    color: var(--ml-status-dark-warn);
+  } */
+
+.ml-theme.light .text-info {
+  color: var(--ml-status-dark-info);
+}
+
+.ml-theme.light .bg-good {
+  background-color: var(--ml-status-good);
+}
+
+.ml-theme.light .bg-bad {
+  background-color: var(--ml-status-bad);
+}
+
+.ml-theme.light .bg-warn {
+  background-color: var(--ml-status-warn);
+}
+
+.ml-theme.light .bg-info {
+  background-color: var(--ml-status-info);
+}
+
 @media (prefers-color-scheme: light) {
 
   html.ml-theme,
